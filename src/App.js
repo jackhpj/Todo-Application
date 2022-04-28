@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from 'react-Helmet';
 
 function App() {
 
@@ -58,6 +59,10 @@ function App() {
   }
 
   return (
+    <>
+    <Helmet>
+      <title>todo app</title>
+    </Helmet>
     <div className="App h-screen bg-gradient-to-b from-sky-400 to-sky-200">
       <div className="flex-col w-1/4 m-auto justify-center ">
         <h2 className="text-center text-3xl font-semibold mb-4">#Todo List</h2>
@@ -124,6 +129,7 @@ function App() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
